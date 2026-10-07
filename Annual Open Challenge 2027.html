@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Annual Open Challenge 2027 – Register</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef3f0;--ink:#12263a;--mute:#51657a;--card:#fff;--line:#c9d6d0;--kids:#ffb400;--mid:#0e8a7d;--u35:#e0457b;--on:#12263a;
+--d:'Bricolage Grotesque',system-ui,sans-serif;--b:'Instrument Sans',system-ui,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1a26;--ink:#eaf1ee;--mute:#9fb2c2;--card:#16283a;--line:#2b4157;--on:#0e1a26}}
+:root[data-theme="dark"]{--bg:#0e1a26;--ink:#eaf1ee;--mute:#9fb2c2;--card:#16283a;--line:#2b4157;--on:#0e1a26}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 var(--b)}
+h1,h2,h3{font-family:var(--d);line-height:1.05;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--u35);outline-offset:2px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+section{padding:56px 0}
+h2{font-size:clamp(1.8rem,4vw,2.5rem);font-weight:800;margin-bottom:8px}
+.sub{color:var(--mute);max-width:60ch;margin:0 0 28px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0;gap:12px}
+nav b{font-family:var(--d);font-size:1.15rem}
+.btn{display:inline-block;border:0;border-radius:999px;background:var(--ink);color:var(--bg);font:600 1rem var(--b);padding:12px 22px;cursor:pointer;text-decoration:none}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+.hero h1{font-size:clamp(2.6rem,9vw,6rem);font-weight:800;letter-spacing:-.03em;max-width:12ch}
+.hero p{font-size:1.15rem;max-width:52ch;color:var(--mute);margin:18px 0 24px}
+.cd{display:flex;gap:10px;margin:0 0 28px;flex-wrap:wrap}
+.cd div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px 14px;text-align:center;min-width:72px}
+.cd strong{display:block;font:800 1.6rem var(--d)}
+.cd span{font-size:.8rem;color:var(--mute)}
+.bibs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px}
+.bib{position:relative;background:var(--card);border:2px solid var(--ink);border-radius:6px;padding:22px 18px 18px;text-align:left;cursor:pointer;font:inherit;color:inherit;transition:transform .15s}
+.bib:hover{transform:rotate(-1.2deg) translateY(-3px)}
+.bib::before,.bib::after{content:"";position:absolute;top:8px;width:10px;height:10px;border-radius:50%;border:2px solid var(--ink);background:var(--bg)}
+.bib::before{left:8px}.bib::after{right:8px}
+.bib .no{display:block;font:800 clamp(2.4rem,6vw,3.6rem) var(--d);color:var(--c);line-height:1}
+.bib h3{font-size:1.3rem;margin:10px 0 2px}.bib small{color:var(--mute)}
+.bib i{display:block;height:8px;background:var(--c);margin:14px -18px -18px;border-radius:0 0 3px 3px}
+.k{--c:var(--kids)}.m{--c:var(--mid)}.u{--c:var(--u35)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.facts div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+.facts dt{color:var(--mute);font-size:.88rem}.facts dd{margin:2px 0 0;font:800 1.2rem var(--d)}
+.tw{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;min-width:640px}
+th,td{text-align:left;padding:14px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border:0}th{font-family:var(--d);font-size:.95rem}
+.dot{display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--c);margin-right:8px}
+ol.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;padding:0;list-style:none;counter-reset:s}
+ol.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+ol.steps li::before{content:counter(s);font:800 1.6rem var(--d);display:block;color:var(--u35)}
+.formbox{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.full{grid-column:1/-1}
+label{display:block;font-weight:600;font-size:.92rem;margin-bottom:4px}
+input,select{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:8px;padding:10px 12px}
+.cats{display:flex;gap:10px;flex-wrap:wrap}
+.cats label{flex:1;min-width:140px;border:2px solid var(--line);border-radius:10px;padding:12px;cursor:pointer;margin:0;font-weight:500}
+.cats input{width:auto;margin-right:6px}
+.cats label:has(input:checked){border-color:var(--c);background:color-mix(in srgb,var(--c) 18%,transparent)}
+.hint{font-size:.85rem;color:var(--mute);margin-top:4px}
+.err{color:#d6336c;font-weight:600;min-height:1.4em}
+.ok{display:none;margin-top:20px;border:2px dashed var(--mid);border-radius:12px;padding:18px}
+.ok.show{display:block}.ok strong{font:800 2rem var(--d)}
+.list{margin-top:28px}
+.row{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:10px 0;border-bottom:1px solid var(--line)}
+details{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:10px}
+summary{font-weight:600;cursor:pointer}
+footer{padding:32px 0 48px;color:var(--mute);font-size:.9rem}
+@media(max-width:720px){.bibs{grid-template-columns:1fr}form{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><b>Annual Open Challenge</b><a class="btn alt" href="#register">Register</a></nav>
+
+<header class="hero">
+<h1>Three age groups. One start line.</h1>
+<p>A community games day with sport, quiz and creative events for kids, adults under 35, and the 35-and-over crowd. Pick your category, choose an event, and get your bib number in under two minutes.</p>
+<div class="cd" id="cd" aria-live="off"></div>
+<div class="bibs" id="bibs"></div>
+</header>
+
+<section id="details">
+<h2>Event details</h2>
+<p class="sub">Everything you need to plan the day.</p>
+<dl class="facts" id="facts"></dl>
+</section>
+
+<section id="cats">
+<h2>Categories, events and fees</h2>
+<p class="sub">Age is counted on the event date. Each participant can enter up to two events in their own category.</p>
+<div class="tw"><table id="tbl"></table></div>
+</section>
+
+<section>
+<h2>How registration works</h2>
+<p class="sub">Four steps, in order.</p>
+<ol class="steps">
+<li><b>Choose a category</b><br>Match your age on the event date.</li>
+<li><b>Fill the form</b><br>Kids need a parent or guardian's details.</li>
+<li><b>Save your bib</b><br>Your registration ID and bib number appear instantly.</li>
+<li><b>Report and pay</b><br>Pay the fee at the desk on event day with your ID.</li>
+</ol>
+</section>
+
+<section id="register">
+<h2>Register now</h2>
+<p class="sub" id="regsub"></p>
+<div class="formbox">
+<form id="f" novalidate>
+<div class="full"><label id="cl">Category</label>
+<div class="cats" id="catpick" role="radiogroup" aria-labelledby="cl"></div></div>
+<div><label for="name">Full name</label><input id="name" required autocomplete="name"></div>
+<div><label for="dob">Date of birth</label><input id="dob" type="date" required><div class="hint" id="agehint"></div></div>
+<div><label for="email">Email</label><input id="email" type="email" required autocomplete="email"></div>
+<div><label for="phone">Mobile number</label><input id="phone" type="tel" required inputmode="tel" autocomplete="tel"></div>
+<div><label for="city">City or town</label><input id="city" required></div>
+<div><label for="shirt">T-shirt size</label><select id="shirt"></select></div>
+<div class="full"><label for="ev1">Event choice 1</label><select id="ev1" required></select></div>
+<div class="full"><label for="ev2">Event choice 2 (optional)</label><select id="ev2"></select></div>
+<div id="g1"><label for="gname">Parent or guardian name</label><input id="gname"></div>
+<div id="g2"><label for="gphone">Guardian mobile</label><input id="gphone" type="tel" inputmode="tel"></div>
+<div class="full"><label for="med">Medical note or emergency contact (optional)</label><input id="med"></div>
+<div class="full"><label><input type="checkbox" id="ok" style="width:auto"> I accept the rules and confirm the details above are correct.</label></div>
+<div class="full err" id="err" role="alert"></div>
+<div class="full"><button class="btn" type="submit">Save my registration</button></div>
+</form>
+<div class="ok" id="done" role="status" tabindex="-1"></div>
+</div>
+
+<div class="list" id="mine"></div>
+</section>
+
+<section>
+<h2>Questions</h2>
+<details><summary>Where is my registration stored?</summary><p>This page has no server. Registrations are saved in this browser on this device. Keep your registration ID and download the CSV to keep a copy.</p></details>
+<details><summary>Can I change my event?</summary><p>Register again with the same name and the newer entry replaces the older one.</p></details>
+<details><summary>What if I'm on the age boundary?</summary><p>Your age on the event date decides your category. Carry proof of age to the desk.</p></details>
+</section>
+<footer>Annual Open Challenge 2027. Dates, venue and fees are sample values; edit the EVENT object at the top of the script.</footer>
+</div>
+
+<script>
+const EVENT={date:"2027-01-24T07:00:00",close:"2026-12-15",venue:"Municipal Sports Ground",city:"Your City",reporting:"6:30 AM",slots:150};
+const CATS=[
+{id:"kids",cls:"k",name:"Kids",min:6,max:12,fee:200,prefix:"K",slots:60,events:["50 m dash","Drawing and colouring","Junior spelling bee","Sack race"]},
+{id:"u35",cls:"u",name:"Under 35",min:13,max:34,fee:500,prefix:"U",slots:150,events:["5 km run","Badminton singles","General quiz","Futsal team of 5"]},
+{id:"mid",cls:"m",name:"Middle Age",min:35,max:55,fee:400,prefix:"M",slots:100,events:["3 km walk or run","Chess","Carrom doubles","Tug of war team"]}];
+const KEY="annual-open-2027";
+const $=s=>document.querySelector(s);
+const fmt=d=>new Date(d).toLocaleDateString(undefined,{weekday:"short",day:"numeric",month:"long",year:"numeric"});
+let mem=[];
+const load=()=>{try{return JSON.parse(localStorage.getItem(KEY)||"[]")}catch(e){return mem}};
+const save=a=>{mem=a;try{localStorage.setItem(KEY,JSON.stringify(a))}catch(e){}};
+
+$("#bibs").innerHTML=CATS.map((c,i)=>`<button class="bib ${c.cls}" data-c="${c.id}"><span class="no">${c.prefix}${String(i+1).padStart(2,"0")}</span><h3>${c.name}</h3><small>Ages ${c.min}–${c.max} · ₹${c.fee}</small><i></i></button>`).join("");
+$("#facts").innerHTML=[["Event day",fmt(EVENT.date)],["Registration closes",fmt(EVENT.close)],["Venue",EVENT.venue],["Report by",EVENT.reporting]].map(x=>`<div><dt>${x[0]}</dt><dd>${x[1]}</dd></div>`).join("");
+$("#tbl").innerHTML=`<tr><th>Category</th><th>Age on event day</th><th>Events</th><th>Fee</th><th>Slots</th></tr>`+CATS.map(c=>`<tr class="${c.cls}"><td><span class="dot"></span><b>${c.name}</b></td><td>${c.min}–${c.max} years</td><td>${c.events.join(", ")}</td><td>₹${c.fee}</td><td>${c.slots}</td></tr>`).join("");
+$("#regsub").textContent=`Registration closes ${fmt(EVENT.close)}. Fee is paid at the desk on event day.`;
+$("#catpick").innerHTML=CATS.map(c=>`<label class="${c.cls}"><input type="radio" name="cat" value="${c.id}"> <b>${c.name}</b><br><small>${c.min}–${c.max} yrs · ₹${c.fee}</small></label>`).join("");
+$("#shirt").innerHTML=["S","M","L","XL","Kids M","Kids L"].map(s=>`<option>${s}</option>`).join("");
+
+function tick(){const ms=new Date(EVENT.date)-Date.now();
+if(ms<=0){$("#cd").innerHTML="<b>Event day is here.</b>";return}
+const d=Math.floor(ms/864e5),h=Math.floor(ms/36e5)%24,m=Math.floor(ms/6e4)%60;
+$("#cd").innerHTML=[[d,"days"],[h,"hours"],[m,"minutes"]].map(x=>`<div><strong>${x[0]}</strong><span>${x[1]}</span></div>`).join("")}
+tick();setInterval(tick,3e4);
+
+const cur=()=>CATS.find(c=>c.id===(document.querySelector("input[name=cat]:checked")||{}).value);
+function ageOn(dob){const d=new Date(dob),e=new Date(EVENT.date);let a=e.getFullYear()-d.getFullYear();
+if(e.getMonth()<d.getMonth()||(e.getMonth()==d.getMonth()&&e.getDate()<d.getDate()))a--;return a}
+function sync(){const c=cur();const opts=c?c.events:[];
+$("#ev1").innerHTML=`<option value="">Select an event</option>`+opts.map(o=>`<option>${o}</option>`).join("");
+$("#ev2").innerHTML=`<option value="">None</option>`+opts.map(o=>`<option>${o}</option>`).join("");
+const kid=c&&c.id==="kids";$("#g1").style.display=$("#g2").style.display=kid?"":"none";
+const dob=$("#dob").value;
+$("#agehint").textContent=dob?`Age on event day: ${ageOn(dob)}`:"";}
+document.querySelectorAll("input[name=cat]").forEach(r=>r.onchange=sync);
+$("#dob").onchange=()=>{sync();const dob=$("#dob").value;if(!dob)return;const a=ageOn(dob);
+const c=CATS.find(c=>a>=c.min&&a<=c.max);if(c){document.querySelector(`input[value=${c.id}]`).checked=true;const v=$("#dob").value;sync()}};
+document.querySelectorAll(".bib").forEach(b=>b.onclick=()=>{document.querySelector(`input[value=${b.dataset.c}]`).checked=true;sync();$("#register").scrollIntoView();$("#name").focus({preventScroll:true})});
+sync();
+
+$("#f").onsubmit=e=>{e.preventDefault();const err=m=>{$("#err").textContent=m;return false};
+const c=cur();if(!c)return err("Choose a category.");
+const v=id=>$("#"+id).value.trim();
+if(!v("name")||!v("dob")||!v("email")||!v("phone")||!v("city")||!v("ev1"))return err("Fill in every required field.");
+const a=ageOn(v("dob"));if(a<c.min||a>c.max)return err(`Age on event day is ${a}. ${c.name} is for ages ${c.min}–${c.max}. Pick the matching category.`);
+if(!/^\S+@\S+\.\S+$/.test(v("email")))return err("Enter a valid email address.");
+if(!/^[+\d][\d\s-]{8,14}$/.test(v("phone")))return err("Enter a valid mobile number.");
+if(c.id==="kids"&&(!v("gname")||!v("gphone")))return err("Kids need a parent or guardian name and mobile number.");
+if(v("ev2")&&v("ev2")===v("ev1"))return err("Choose two different events, or leave choice 2 empty.");
+if(!$("#ok").checked)return err("Accept the rules to continue.");
+if(new Date()>new Date(EVENT.close+"T23:59:59"))return err("Registration has closed.");
+err("");
+let all=load().filter(r=>!(r.email===v("email")&&r.name.toLowerCase()===v("name").toLowerCase()));
+const n=all.filter(r=>r.cat===c.id).length+1;
+if(n>c.slots)return err(`${c.name} is full.`);
+const r={id:"AOC-"+Date.now().toString(36).toUpperCase().slice(-6),bib:c.prefix+String(n).padStart(3,"0"),cat:c.id,catName:c.name,name:v("name"),dob:v("dob"),email:v("email"),phone:v("phone"),city:v("city"),shirt:$("#shirt").value,ev1:v("ev1"),ev2:v("ev2"),guardian:v("gname"),gphone:v("gphone"),note:v("med"),fee:c.fee,at:new Date().toISOString()};
+all.push(r);save(all);
+const d=$("#done");d.className="ok show";
+d.innerHTML=`<strong>Bib ${r.bib}</strong><p>Registered: ${r.name}, ${r.catName}. Registration ID <b>${r.id}</b>. Pay ₹${r.fee} at the desk on ${fmt(EVENT.date)} and report by ${EVENT.reporting}.</p>`;
+d.focus();$("#f").reset();sync();draw()};
+
+function draw(){const a=load();const box=$("#mine");
+if(!a.length){box.innerHTML="";return}
+box.innerHTML=`<h3>Registrations saved on this device (${a.length})</h3>`+a.slice().reverse().map(r=>`<div class="row"><span><b>${r.bib}</b> ${r.name} · ${r.catName}</span><span>${r.ev1}${r.ev2?", "+r.ev2:""} · ${r.id}</span></div>`).join("")+`<p><button class="btn alt" id="csv">Download CSV</button> <button class="btn alt" id="clr">Clear all</button></p>`;
+$("#csv").onclick=()=>{const h=Object.keys(a[0]);const q=x=>`"${String(x).replace(/"/g,'""')}"`;
+const t=[h.join(",")].concat(a.map(r=>h.map(k=>q(r[k])).join(","))).join("\n");
+const l=document.createElement("a");l.href="data:text/csv;charset=utf-8,"+encodeURIComponent(t);l.download="registrations.csv";l.click()};
+$("#clr").onclick=()=>{if(confirm("Remove all saved registrations from this browser?")){save([]);draw()}}}
+draw();
+</script>
+</body>
+</html>
